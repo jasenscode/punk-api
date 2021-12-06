@@ -4,16 +4,15 @@
 .header {
   display: flex;
   align-items: center;
-  padding: 0.5rem;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1.2rem;
   &__logo {
-    width: 94.8px;
-    height: 111px;
-    padding: 1rem;
+    width: 75.2px;
+    height: 88.8px;
   }
   &__text {
-    flex-grow: 1;
     color: $light-color;
-    padding: 1rem;
     &__title {
       font-family: $header-font;
       text-transform: uppercase;
@@ -26,6 +25,7 @@
       margin: 0;
       font-family: $body-font;
       text-align: end;
+      color: $accent-color;
     }
   }
 }
