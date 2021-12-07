@@ -3,28 +3,30 @@
 
 .card {
   border-radius: 15px;
-  border: 1px solid black;
-  background-color: $dark-color;
   font-family: $body-font;
   overflow: hidden;
+  margin-bottom: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   &__img {
     background-color: $light-color;
-    & > img {
+    padding: 0.5rem;
+    & img {
       max-width: 100%;
-      height: 250px;
-      object-fit: contain;
+      height: 300px;
+      display: block;
+      margin: auto;
     }
   }
   &__detail {
-    border-radius: 15px 15px 0 0;
     color: $light-color;
-    padding: 0 2rem;
+    padding: 1rem 2rem;
+    background-color: $dark-color;
     .card__header {
       display: flex;
       justify-content: space-between;
-      gap: 2rem;
+      gap: 1rem;
       .card__name {
-        font-size: 1.3rem;
+        font-size: 1.4rem;
         align-self: center;
         margin: 0.5rem 0;
         padding: 0.2rem 0.8rem;
@@ -33,15 +35,20 @@
       }
       .card__miscellaneous {
         align-self: center;
+        text-align: end;
         margin: 1rem 0 1rem 0;
       }
     }
     .card__tagline {
       margin: 0;
+      padding-top: 0.4rem;
       padding-bottom: 0.8rem;
       border-bottom: 1px solid $accent-color;
       font-size: 1.1rem;
       font-weight: 600;
+    }
+    .card__description {
+      line-height: 1.4rem;
     }
   }
 }

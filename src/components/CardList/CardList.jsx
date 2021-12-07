@@ -8,7 +8,7 @@ const CardList = (prop) => {
   const createCard = beerArr.map((beer, index) => {
     return (
       <div>
-        <Card imgSRC={beerArr[index].image_url} />
+        <Card imgSRC={beerArr[index].image_url} imgText={"Beer picture"} name={beerArr[index].name} misc={"ABV: "} miscDetail={beerArr[index].abv} tagline={beerArr[index].tagline} description={beerArr[index].description} />
       </div>
     );
   });
