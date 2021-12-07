@@ -2,7 +2,7 @@ import React from "react";
 import "./Card.scss";
 
 const Card = (prop) => {
-  const { imgSRC, imgText, name, tagline, misc, miscDetail, description } = prop;
+  const { imgSRC, imgText, name, misc, miscDetail, tagline, description } = prop;
 
   return (
     <div className="card">

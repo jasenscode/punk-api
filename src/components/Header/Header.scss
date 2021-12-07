@@ -4,9 +4,9 @@
 .header {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 1rem;
+  justify-content: space-between;
   padding: 1.2rem;
+  background-color: $dark-color;
   &__logo {
     width: 75.2px;
     height: 88.8px;
