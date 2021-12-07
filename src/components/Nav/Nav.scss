@@ -1,0 +1,23 @@
+@use "../../assets/sass/_variables.scss" as *;
+@use "../../assets/sass/_typography.scss" as *;
+
+.nav {
+  color: $light-color;
+  padding: 1rem;
+  &__label {
+    display: block;
+    margin-bottom: 0.3rem;
+    &:last-child {
+      display: inline;
+    }
+  }
+  //   &__text-input {
+  //     border-radius: 5px;
+  //     outline: none;
+  //     padding: 0.3rem 0;
+  //     width: 100%;
+  //   }
+  &__range-input {
+    width: 100%;
+  }
+}

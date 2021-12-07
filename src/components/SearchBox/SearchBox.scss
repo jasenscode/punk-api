@@ -1,0 +1,16 @@
+@use "../../assets/sass/_variables.scss" as *;
+@use "../../assets/sass/_typography.scss" as *;
+
+.search {
+  color: $light-color;
+  &__label {
+    display: block;
+    margin-bottom: 0.3rem;
+  }
+  &__input {
+    width: 100%;
+    outline: none;
+    padding: 0.3rem 0.3rem;
+    border-radius: 5px;
+  }
+}
