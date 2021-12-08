@@ -5,7 +5,7 @@ import Nav from "../../components/Nav/Nav";
 const NavContainer = () => {
   return (
     <div className="nav-container">
-      <Nav searchTerm="name" rangeSearchOne="ABV " checkbox="classics" />
+      <Nav />
     </div>
   );
 };
