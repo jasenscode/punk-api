@@ -9,6 +9,7 @@ import Nav from "./components/Nav/Nav";
 
 const App = () => {
   const [beerArr, setBeerArr] = useState([]);
+  const [textSearch, setTextSearch] = useState("");
 
   useEffect(() => {
     fetch("https://api.punkapi.com/v2/beers")
@@ -20,6 +21,15 @@ const App = () => {
       });
   }, []);
 
+  const handleTextInput = (event) => {
+    const inputValue = event.target.value.toLowerCase();
+    setTextSearch(inputValue);
+  };
+
+  const filteredArr = beerArr.filter((beer) => {
+    return beer.name.toLowerCase().includes(textSearch);
+  });
+
   return (
     <div className="App">
       <header>
@@ -27,8 +37,8 @@ const App = () => {
       </header>
 
       <main>
-        <Nav />
-        <MainContainer beerArr={beerArr} />
+        <Nav handleTextInput={handleTextInput} textSearch={textSearch} />
+        <MainContainer beerArr={filteredArr} />
       </main>
     </div>
   );
