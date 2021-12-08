@@ -12,6 +12,7 @@ const Card = (prop) => {
       <div className="card__detail">
         <div className="card__header">
           <h3 className="card__name">{name}</h3>
+
           <h4 className="card__miscellaneous">
             {misc}
             <span className="misc-detail">{miscDetail}</span>

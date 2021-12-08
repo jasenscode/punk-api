@@ -29,3 +29,23 @@
     }
   }
 }
+
+@media (min-width: 1024px) {
+  .header {
+    justify-content: flex-start;
+    gap: 1.3rem;
+    &__logo {
+      width: 90px;
+      height: 105.6px;
+    }
+    &__text {
+      &__title {
+        font-size: 4rem;
+      }
+      &__subtitle {
+        text-align: left;
+        font-size: 2rem;
+      }
+    }
+  }
+}

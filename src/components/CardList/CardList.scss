@@ -1,0 +1,8 @@
+@media (min-width: 1024px) {
+  .card-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 1rem;
+  }
+}

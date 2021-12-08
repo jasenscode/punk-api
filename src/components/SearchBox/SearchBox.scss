@@ -12,5 +12,8 @@
     outline: none;
     padding: 0.3rem 0.3rem;
     border-radius: 5px;
+    border: 4px solid $accent-color;
+    box-sizing: border-box;
+    font-family: $body-font;
   }
 }

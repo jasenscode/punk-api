@@ -1,16 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Nav.scss";
 import SearchBox from "../SearchBox/SearchBox";
+import FilterItem from "../FilterItem/FilterItem";
 
-const Nav = (prop) => {
-  const { searchTerm, rangeSearchOne, rangeSearchTwo, checkbox } = prop;
-
+const Nav = () => {
   // create useState for each search/filter
   // create useEffect to update each state by getting value from the input
+  const [textSearch, setTextSearch] = useState("");
+
+  const handleTextInput = (event) => {
+    setTextSearch(event.target.value.toLowerCase());
+  };
+
+  console.log(textSearch);
 
   return (
     <div className="nav">
-      <SearchBox labelName="Name:" />
+      <h3 className="nav__header">Filters</h3>
+
+      <SearchBox labelName="Search By Name:" inputLabel="name-search" handleInput={handleTextInput} />
+
+      <FilterItem labelName="Classic (Created before 2011)" />
 
       {/* <label className="nav__label" htmlFor={rangeSearchOne}>
         {rangeSearchOne}

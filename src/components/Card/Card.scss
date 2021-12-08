@@ -5,8 +5,11 @@
   border-radius: 15px;
   font-family: $body-font;
   overflow: hidden;
-  margin-bottom: 2rem;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: $dark-color;
+  &:not(:last-child) {
+    margin-bottom: 2rem;
+  }
   &__img {
     background-color: $light-color;
     padding: 0.5rem;
@@ -20,7 +23,6 @@
   &__detail {
     color: $light-color;
     padding: 1rem 2rem;
-    background-color: $dark-color;
     .card__header {
       display: flex;
       justify-content: space-between;
@@ -36,19 +38,25 @@
       .card__miscellaneous {
         align-self: center;
         text-align: end;
-        margin: 1rem 0 1rem 0;
+        margin: 0;
       }
     }
     .card__tagline {
       margin: 0;
       padding-top: 0.4rem;
       padding-bottom: 0.8rem;
-      border-bottom: 1px solid $accent-color;
+      border-bottom: 2px solid $accent-color;
       font-size: 1.1rem;
       font-weight: 600;
     }
     .card__description {
       line-height: 1.4rem;
     }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .card {
+    width: 27%;
   }
 }
