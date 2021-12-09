@@ -4,11 +4,11 @@ import "./FilterItem.scss";
 const FilterItem = (props) => {
   const { labelName, inputLabel } = props;
   return (
-    <div>
-      <label className="search__label" htmlFor={inputLabel}>
+    <div className="check-filter">
+      <label className="check-filter__label" htmlFor={inputLabel}>
         {labelName}
       </label>
-      <input type="checkbox" name={inputLabel} />
+      <input className="check-filter__box" type="checkbox" name={inputLabel} />
     </div>
   );
 };

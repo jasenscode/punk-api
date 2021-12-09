@@ -5,25 +5,25 @@
   color: $light-color;
   background-color: $dark-color;
   padding: 2rem;
+  font-family: $body-font;
   & > *:not(:last-child) {
     margin-bottom: 1rem;
   }
   &__header {
-    margin-top: 0;
     padding-bottom: 1rem;
     border-bottom: 2px solid $accent-color;
-  }
-  &__label {
-    display: block;
-    margin-bottom: 0.3rem;
-    &:last-child {
-      display: inline;
-    }
+    margin-top: 0;
+    font-weight: 500;
+    font-size: 1.3rem;
   }
 }
 
 @media (min-width: 1024px) {
   .nav {
     width: 17%;
+    padding-top: 0;
+    &__header {
+      font-size: 2rem;
+    }
   }
 }

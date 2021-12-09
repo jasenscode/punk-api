@@ -4,7 +4,7 @@ import SearchBox from "../SearchBox/SearchBox";
 import FilterItem from "../FilterItem/FilterItem";
 
 const Nav = (props) => {
-  const { handleTextInput, textSearch } = props;
+  const { handleTextInput } = props;
   // create useState for each search/filter
   // create useEffect to update each state by getting value from the input
 

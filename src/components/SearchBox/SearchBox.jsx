@@ -2,7 +2,7 @@ import React from "react";
 import "./SearchBox.scss";
 
 const SearchBox = (props) => {
-  const { labelName, inputLabel, searchTerm, handleInput } = props;
+  const { labelName, inputLabel, handleInput } = props;
   return (
     <div className="search">
       <label className="search__label" htmlFor={inputLabel}>
