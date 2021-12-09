@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/punk-api/static/css/main.e98fa9e8.chunk.css",
+    "main.css": "/punk-api/static/css/main.6636bf9f.chunk.css",
     "main.js": "/punk-api/static/js/main.c639bbe5.chunk.js",
     "main.js.map": "/punk-api/static/js/main.c639bbe5.chunk.js.map",
     "runtime-main.js": "/punk-api/static/js/runtime-main.afddbd33.js",
@@ -10,14 +10,14 @@
     "static/js/3.689a7ede.chunk.js": "/punk-api/static/js/3.689a7ede.chunk.js",
     "static/js/3.689a7ede.chunk.js.map": "/punk-api/static/js/3.689a7ede.chunk.js.map",
     "index.html": "/punk-api/index.html",
-    "static/css/main.e98fa9e8.chunk.css.map": "/punk-api/static/css/main.e98fa9e8.chunk.css.map",
+    "static/css/main.6636bf9f.chunk.css.map": "/punk-api/static/css/main.6636bf9f.chunk.css.map",
     "static/js/2.6b21f094.chunk.js.LICENSE.txt": "/punk-api/static/js/2.6b21f094.chunk.js.LICENSE.txt",
     "static/media/brewdog-logo.d09f35fe.png": "/punk-api/static/media/brewdog-logo.d09f35fe.png"
   },
   "entrypoints": [
     "static/js/runtime-main.afddbd33.js",
     "static/js/2.6b21f094.chunk.js",
-    "static/css/main.e98fa9e8.chunk.css",
+    "static/css/main.6636bf9f.chunk.css",
     "static/js/main.c639bbe5.chunk.js"
   ]
 }
