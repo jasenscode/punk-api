@@ -15,7 +15,7 @@ const App = () => {
   const [checkedPh, setCheckedPh] = useState(false);
 
   useEffect(() => {
-    fetch("https://api.punkapi.com/v2/beers")
+    fetch("https://api.punkapi.com/v2/beers?per_page=80")
       .then((response) => {
         return response.json();
       })
@@ -50,6 +50,8 @@ const App = () => {
       return beer.ph < 4;
     } else return beer.name.toLowerCase().includes(textSearch);
   });
+
+  console.log(filteredArr);
 
   console.log(filteredArr);
 
