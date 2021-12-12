@@ -15,14 +15,18 @@ const App = () => {
   const [checkedPh, setCheckedPh] = useState(false);
 
   useEffect(() => {
-    fetch("https://api.punkapi.com/v2/beers?per_page=80")
+    const classic = checkedClassic ? "&brewed_before=01-2011" : "";
+    const highAbv = checkedAbv ? "&abv_gt=6" : "";
+
+    const URL = `https://api.punkapi.com/v2/beers?per_page=80${classic}${highAbv}`;
+    fetch(URL)
       .then((response) => {
         return response.json();
       })
       .then((beersList) => {
         setBeerArr(beersList);
       });
-  }, []);
+  }, [checkedClassic, checkedAbv]);
 
   const handleTextInput = (event) => {
     const inputValue = event.target.value.toLowerCase();
@@ -42,18 +46,10 @@ const App = () => {
   };
 
   const filteredArr = beerArr.filter((beer) => {
-    if (checkedClassic) {
-      return parseInt(beer.first_brewed.slice(5, 7)) < 11;
-    } else if (checkedAbv) {
-      return beer.abv > 6;
-    } else if (checkedPh) {
-      return beer.ph < 4;
-    } else return beer.name.toLowerCase().includes(textSearch);
+    if (textSearch) {
+      return beer.name.toLowerCase().includes(textSearch);
+    } else return beerArr;
   });
-
-  console.log(filteredArr);
-
-  console.log(filteredArr);
 
   return (
     <div className="App">
@@ -62,7 +58,7 @@ const App = () => {
       </header>
 
       <main>
-        <Nav handleTextInput={handleTextInput} textSearch={textSearch} handleCheckClassic={handleCheckClassic} handleCheckAbv={handleCheckAbv} handleCheckPh={handleCheckPh} />
+        <Nav handleTextInput={handleTextInput} handleCheckClassic={handleCheckClassic} handleCheckAbv={handleCheckAbv} handleCheckPh={handleCheckPh} />
         <MainContainer beerArr={filteredArr} />
       </main>
     </div>
