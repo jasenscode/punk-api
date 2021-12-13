@@ -12,7 +12,7 @@ const App = () => {
   const [textSearch, setTextSearch] = useState("");
   const [checkedClassic, setCheckedClassic] = useState(false);
   const [checkedAbv, setCheckedAbv] = useState(false);
-  const [checkedPh, setCheckedPh] = useState(false);
+  // const [checkedPh, setCheckedPh] = useState(false);
 
   useEffect(() => {
     const classic = checkedClassic ? "&brewed_before=01-2011" : "";
@@ -41,9 +41,9 @@ const App = () => {
     setCheckedAbv(event.target.checked);
   };
 
-  const handleCheckPh = (event) => {
-    setCheckedPh(event.target.checked);
-  };
+  // const handleCheckPh = (event) => {
+  //   setCheckedPh(event.target.checked);
+  // };
 
   const filteredArr = beerArr.filter((beer) => {
     if (textSearch) {
@@ -58,7 +58,8 @@ const App = () => {
       </header>
 
       <main>
-        <Nav handleTextInput={handleTextInput} handleCheckClassic={handleCheckClassic} handleCheckAbv={handleCheckAbv} handleCheckPh={handleCheckPh} />
+        {/* add handleCheckPh={handleCheckedPh once filter works} */}
+        <Nav handleTextInput={handleTextInput} handleCheckClassic={handleCheckClassic} handleCheckAbv={handleCheckAbv} />
         <MainContainer beerArr={filteredArr} />
       </main>
     </div>
