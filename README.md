@@ -6,7 +6,7 @@ The timeframe allowed to complete this project was one week.
 
 [Check out the live demo here!](https://jasenscode.github.io/punk-api/)
 
-![PunkAPI screenshot](put ss here)
+![PunkAPI screenshot](https://github.com/jasenscode/punk-api/blob/main/src/assets/images/punk-api-screenshot.JPG?raw=true)
 ____________
 ### Technologies
 
