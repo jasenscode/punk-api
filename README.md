@@ -26,7 +26,7 @@ Initially I used to data file as opposed to the API to get functionality to map 
 
 The brief outlined that once the basic site had been created and the beverage cards were able to be rendered on the screen then we should add some filters, the first one being a text search with the page updating as each letter is typed in the search box. 
 
-After this was done, further filters were implemented, namely to only render beverages that were brewed before a certain year and those with higher alcohol content. In order to do this, I reviewed the documentation and found there were different endpoints I could use within the fetch function. This meant that the URL could be altered slightly whenever the relevant filter checkbox was checked.
+After this was done, further filters were implemented, namely to only render beverages that were brewed before a certain year and those with higher alcohol content. In order to do this, I reviewed the API documentation and found there were different endpoints I could use within the fetch function. This meant that the URL could be altered slightly whenever the relevant filter checkbox was checked.
 
 _____
 ### Future fixes
