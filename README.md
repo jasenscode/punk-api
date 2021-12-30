@@ -32,3 +32,4 @@ _____
 ### Future fixes
 
 - Implement functionality for pH filter
+- Make the ABV and acidity filters a range as opposed to tick box for one value
