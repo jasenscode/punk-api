@@ -31,5 +31,5 @@ After this was done, further filters were implemented, namely to only render bev
 _____
 ### Future fixes
 
-- Implement functionality for pH filter
+- Implement functionality for more filters
 - Make the ABV and acidity filters a range as opposed to tick box for one value
